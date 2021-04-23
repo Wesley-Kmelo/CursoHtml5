@@ -15,5 +15,13 @@
    
      /*comandos para configurar o FIGURE*/
 
-    /*como foi comentado na página do index, para configurar uma imagem expecifica, basta escrever o comando FIGURE seguido de CLASS e depois o nome que foi dado no index. Nesse caso FOTOLEG*/
+    /*como foi comentado na página do index, para configurar uma imagem especifica, basta escrever o comando FIGURE seguido de ponto e o nome da CLASS que foi dada no index. Nesse caso FOTOLEG*/
 
+figure.FotoLeg{
+  border: 3px solid white;
+  box-shadow: 1px 3px 4px black;
+}
+figure.FotoLeg img{
+  width: 100%;
+  height: 100%;
+}
