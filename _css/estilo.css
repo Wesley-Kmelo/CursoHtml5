@@ -22,7 +22,7 @@
     /*Para configurar a posição de um container, ele deve ser absoluto em comparação com seu pai (FIGURE) e seu pai deve ser relativo(quer dizer que vai fixar aonde foi colocado inicialmente.)*/
 
 figure.fotoleg {
- 
+  position: relative;
   border: 3px solid white;
   box-shadow: 1px 3px 4px black;  /*coloca uma borda na imagem*/
 
@@ -33,6 +33,7 @@ figure.fotoleg img{
 }
 
 figure.fotoleg figcaption {
+  position: absolute;
   opacity: 1;
   top: 0px;
   background-color: rgba(0, 0, 0, .4);
