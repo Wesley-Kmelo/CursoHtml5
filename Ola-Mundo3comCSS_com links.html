@@ -11,7 +11,7 @@
 
     <!--a estrutura da tag LINK compreende o parametro REL que informa que o link é uma folha de estilos e o parâmetro HREF que aponta o caminho do arquivo desejado.-->
 
-	<link rel="stylesheet"  href="_css/estilo.css">
+	<link rel="stylesheet"  href="_css/estilo.css"/>
 	
 
 </head>
@@ -28,16 +28,16 @@
 <header>
    
     <!--a tag NAV é do tipo container e quer dizer que o que estiver entre vai ser considerado links para navegação. --> 
-    <nav>
+    <nav id="menu">
         <h1>Menu Principal</h1>
 
     <!-- a tag ol(ordered list) cria uma lista ordenada, onde cada item da lista é designado com a tag li.-->
         <ol>
-            <li>Home</li>
-            <li>Especificações</li>
-            <li>Fotos</li>
-            <li>Multimídia</li>
-            <li>Fale conosco</li>
+            <li><a href="Ola-Mundo3comCSS_com links.html">Home</a></li>
+            <li><a href="specs.html">Especificações</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="multimidia.html">Multimídia</a></li>
+            <li><a href="fale-conosco.html">Fale Conosco</a></li>
         </ol>  
     </nav>
 
@@ -50,21 +50,24 @@
 
 <h2>O que é</h2>
 
-<p>O <span style="text-decoration:underline">Google Glass </span>é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de Project Glass, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+<!--Para ser criado um link para outra página, usa-se a tag "a", ou seja ancora, e depois faz-se uma referência ao tipo dessa ancora que no caso é um link externo. Para o link abrir em uma nova página , usa-se a tag "_blank" dentro da tag do "a". Os parametros do link devem ser programados entre as <> do primeiro a.-->
+
+<p>O <span style="text-decoration:underline">Google Glass </span>é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href="https://www.google.com/glass/start/" target="_blank">Project Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
 
 <!--Devido a natureza semântica da linguagem HTML é aconselhável que todas as imagens referenciadas no código devem ficar entre a tag FIGURE. Isso porque facilita na busca, o fato de que a imagem tem nome. Inclusive existe a possibilidade de colocar titulo e legenda nessas imagens através da tag FIGCAPTION-->
 
 <!--Para facilitar na folha de estilos é usado a tag CLASS junto de um nome . Esse termo é usado para referenciar exatamente qual FIGURE está sendo trabalhado na folha CSS-->
 
-<figure class="FotoLeg">
-    <figcaption>
+<figure class="fotoleg">
+    
         <img src="_imagens/glass-quadro-homem-mulher.jpg"/>
+    <figcaption>
         <h3>Google Glass</h3>
         <p>Uma revolução de gadgets</p>
     </figcaption>
 </figure>
 
-<h2>Data de lançamento</h2>
+<h2>Data de lançamento disso</h2>
 <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
 
 <h2>Especificações Técnicas</h2>
